@@ -7,7 +7,133 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- 메인 화면 -->
+
+  <!-- 네비게이션 -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">SUDO</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="pages/study.html">스터디 소개</a>
+        <a href="pages/album.html">활동 앨범</a>
+        <a href="pages/apply.html" class="nav__cta">지원하기</a>
+      </nav>
+      <button class="nav__theme" id="themeToggle" aria-label="다크 모드 전환">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 히어로 -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__tag fade-up">
+          <img src="https://hansung.ac.kr/sites/hansung/images/common/img-header-logo-color.png" alt="한성대학교" class="hero__univ-logo" />
+           AI / IT 소모임
+        </div>
+        <h1 class="hero__title fade-up">AI와 IT를<br>함께 탐구합니다</h1>
+        <p class="hero__sub fade-up">
+          SUDO는 한성대학교 학생들이 모여 AI·개발·데이터를 스스로 배우고<br>
+          서로 가르치는 비교과 소모임입니다.
+        </p>
+        <div class="hero__actions fade-up">
+          <a href="pages/apply.html" class="btn btn--primary">지원하기</a>
+          <a href="pages/study.html" class="btn btn--ghost">스터디 살펴보기</a>
+        </div>
+      </div>
+      <div class="hero__deco" aria-hidden="true">SUDO</div>
+    </section>
+
+    <!-- 소개 카드 -->
+    <section class="about section">
+      <div class="container">
+        <h2 class="section__title fade-up">SUDO란?</h2>
+        <p class="section__sub fade-up">
+          <!-- Studying, Understanding, Developing, Optimizing — 배우고, 이해하고, 만들고, 발전시키는 소모임 --> ???
+        </p>
+        <div class="about__grid">
+          <div class="card fade-up">
+            <div class="card__icon">📚</div>
+            <h3>스터디</h3>
+            <p>AI·머신러닝·CS 등 다양한 주제를 팀원들과 함께 공부합니다.</p>
+          </div>
+          <div class="card fade-up">
+            <div class="card__icon">🛠</div>
+            <h3>프로젝트</h3>
+            <p>실제 서비스를 기획하고 개발하며 포트폴리오를 쌓습니다.</p>
+          </div>
+          <div class="card fade-up">
+            <div class="card__icon">🤝</div>
+            <h3>네트워킹</h3>
+            <p>비슷한 관심사를 가진 동료들과 함께 성장하는 커뮤니티입니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 활동 하이라이트 -->
+    <section class="highlight section">
+      <div class="container highlight__inner">
+        <div class="highlight__text fade-up">
+          <h2>지금 무엇을<br>공부하고 있나요?</h2>
+          <p>
+            매 학기 새로운 스터디 트랙을 운영합니다.<br>
+            Python 기초부터 딥러닝, 웹 풀스택까지 — 수준에 맞게 선택하세요.
+          </p>
+          <a href="pages/study.html" class="btn btn--primary">스터디 목록 보기</a>
+        </div>
+        <div class="highlight__tracks fade-up">
+          <div class="track">
+            <span class="track__badge">AI / ML</span>
+            <p>머신러닝, 딥러닝, 논문 리뷰</p>
+          </div>
+          <div class="track">
+            <span class="track__badge">Web Dev</span>
+            <p>프론트엔드, 백엔드, 풀스택 프로젝트</p>
+          </div>
+          <div class="track">
+            <span class="track__badge">Data</span>
+            <p>데이터 분석, 시각화, SQL</p>
+          </div>
+          <div class="track">
+            <span class="track__badge">CS 기초</span>
+            <p>알고리즘, 자료구조, 운영체제</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 지원 CTA -->
+    <section class="cta section">
+      <div class="container fade-up">
+        <h2>함께 성장하고 싶다면?</h2>
+        <p>매 학기 초 신입 부원을 모집합니다. 관심 있다면 언제든 지원해주세요.</p>
+        <a href="pages/apply.html" class="btn btn--white">지원서 작성하기</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="https://hansung.ac.kr/sites/hansung/images/common/img-header-logo-color.png" alt="한성대학교" class="footer__univ-logo" />
+      <span class="footer__logo">SUDO</span>
+      <p class="footer__desc"> AI / IT 소모임</p>
+      <nav class="footer__nav">
+        <a href="pages/study.html">스터디 소개</a>
+        <a href="pages/album.html">활동 앨범</a>
+        <a href="pages/apply.html">지원하기</a>
+      </nav>
+      <p class="footer__copy">© 2025 SUDO. Hansung University.</p>
+    </div>
+  </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
