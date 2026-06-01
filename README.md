@@ -126,3 +126,9 @@ git push origin feature/본인파트
 - [ ] 지원하기 (구글 폼 연동)
 - [ ] Supabase DB 연동
 - [ ] Netlify 배포
+
+## 권한 구조
+
+- auth.users : Supabase 인증 사용자
+- admins : 관리자 권한 사용자
+- albums, studies, notices는 관리자만 생성 가능
