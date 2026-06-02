@@ -5,9 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>스터디 소개 — SUDO</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    body { font-family: sans-serif; background: #F7F5F0; color: #1A1A18; margin: 0; padding: 0; }
+
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-bottom: 1px solid #E2DFD8;
+      position: sticky; top: 0; z-index: 10;
+    }
+    .nav-logo { font-size: 1.2rem; font-weight: 600; text-decoration: none; color: #1A1A18; }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { font-size: 0.875rem; color: #7A7870; text-decoration: none; }
+    .nav-links a:hover { color: #1A1A18; }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+    .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .hero p { color: #7A7870; font-size: 1rem; line-height: 1.7; }
+
+    .section { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #E2DFD8;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+    .card-category {
+      font-size: 0.75rem; font-weight: 500;
+      color: #185FA5; background: #E6F1FB;
+      border-radius: 20px; padding: 3px 10px;
+      display: inline-block; margin-bottom: 0.75rem;
+    }
+    .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.875rem; color: #7A7870; line-height: 1.6; }
+    .card-badge {
+      display: inline-block; margin-top: 1rem;
+      font-size: 0.75rem; padding: 3px 10px;
+      border-radius: 20px;
+      background: #EAF3DE; color: #27500A;
+    }
+
+    footer {
+      text-align: center; padding: 2rem;
+      font-size: 0.8rem; color: #7A7870;
+      border-top: 1px solid #E2DFD8;
+      margin-top: 4rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- 스터디 소개 페이지 -->
-  <script src="../assets/js/study.js"></script>
+
+<nav>
+  <a href="../index.html" class="nav-logo">SUDO</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">홈</a></li>
+    <li><a href="study.html">스터디 소개</a></li>
+    <li><a href="album.html">활동 앨범</a></li>
+    <li><a href="apply.html">지원하기</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h1>스터디 소개</h1>
+  <p>SUDO에서 운영 중인 스터디를 소개합니다.<br>관심 있는 분야의 스터디에 참여해보세요!</p>
+</div>
+
+<div class="section">
+  <div class="grid">
+    <div class="card">
+      <span class="card-category">CS 기초</span>
+      <h3>CS 기초 스터디</h3>
+      <p>운영체제, 네트워크, 자료구조 등 컴퓨터 과학의 핵심 개념을 함께 공부합니다.</p>
+      <span class="card-badge">모집 중</span>
+    </div>
+    <div class="card">
+      <span class="card-category">알고리즘</span>
+      <h3>코딩테스트 / 알고리즘 스터디</h3>
+      <p>코딩테스트 문제 풀이와 알고리즘 개념을 체계적으로 학습합니다.</p>
+      <span class="card-badge">모집 중</span>
+    </div>
+    <div class="card">
+      <span class="card-category">웹 개발</span>
+      <h3>웹 개발 스터디</h3>
+      <p>프론트엔드와 백엔드 기술을 함께 배우고 실전 프로젝트를 진행합니다.</p>
+      <span class="card-badge">모집 중</span>
+    </div>
+    <div class="card">
+      <span class="card-category">AI / ML</span>
+      <h3>AI / 머신러닝 스터디</h3>
+      <p>인공지능과 머신러닝의 기초부터 최신 트렌드까지 심도 있게 탐구합니다.</p>
+      <span class="card-badge">모집 중</span>
+    </div>
+    <div class="card">
+      <span class="card-category">데이터</span>
+      <h3>데이터 사이언스 스터디</h3>
+      <p>데이터 분석, 시각화, 통계 등 데이터 사이언스 전반을 학습합니다.</p>
+      <span class="card-badge">모집 중</span>
+    </div>
+    <div class="card">
+      <span class="card-category">앱 개발</span>
+      <h3>앱 개발 스터디</h3>
+      <p>Android / iOS 앱 개발을 배우고 직접 앱을 만들어봅니다.</p>
+      <span class="card-badge">모집 중</span>
+    </div>
+  </div>
+</div>
+
+<footer>© 2025 SUDO — 한성대학교 AI/IT 소모임</footer>
+
+<script src="../assets/js/study.js"></script>
 </body>
 </html>
