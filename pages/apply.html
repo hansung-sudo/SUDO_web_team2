@@ -5,9 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>지원하기 — SUDO</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    .apply-btn {
+      display: inline-block;
+      padding: 0.85rem 2.5rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .apply-btn:hover { opacity: 0.85; }
+  </style>
 </head>
 <body>
-  <!-- 구글 폼 연동 페이지 -->
+  <h1>SUDO 동아리 지원하기</h1>
+  <p>아래 버튼을 눌러 지원서를 작성해주세요.<br>검토 후 연락드리겠습니다.</p>
+  <a class="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScqD7radQzodoqoleqgnojx4pJYLNW-T3o5dVeXqSCtLe-Lqg/viewform?usp=header" target="_blank">
+    지원서 작성하기
+  </a>
   <script src="../assets/js/apply.js"></script>
 </body>
 </html>
