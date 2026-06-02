@@ -5,9 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>활동 앨범 — SUDO</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    body { font-family: sans-serif; background: #F7F5F0; color: #1A1A18; margin: 0; padding: 0; }
+
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-bottom: 1px solid #E2DFD8;
+      position: sticky; top: 0; z-index: 10;
+    }
+    .nav-logo { font-size: 1.2rem; font-weight: 600; text-decoration: none; color: #1A1A18; }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { font-size: 0.875rem; color: #7A7870; text-decoration: none; }
+    .nav-links a:hover { color: #1A1A18; }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+    .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .hero p { color: #7A7870; font-size: 1rem; line-height: 1.7; }
+
+    .section { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .album-card {
+      background: #fff;
+      border: 1px solid #E2DFD8;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .album-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+    .album-card img {
+      width: 100%; height: 220px;
+      object-fit: cover;
+    }
+    .album-info { padding: 1rem 1.25rem; }
+    .album-info h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .album-info p { font-size: 0.825rem; color: #7A7870; line-height: 1.5; }
+    .album-date { font-size: 0.75rem; color: #7A7870; margin-top: 0.5rem; }
+
+    footer {
+      text-align: center; padding: 2rem;
+      font-size: 0.8rem; color: #7A7870;
+      border-top: 1px solid #E2DFD8;
+      margin-top: 4rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- 활동 앨범 페이지 -->
-  <script src="../assets/js/album.js"></script>
+
+<nav>
+  <a href="../index.html" class="nav-logo">SUDO</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">홈</a></li>
+    <li><a href="study.html">스터디 소개</a></li>
+    <li><a href="album.html">활동 앨범</a></li>
+    <li><a href="apply.html">지원하기</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h1>활동 앨범</h1>
+  <p>SUDO의 다양한 활동 모습을 담았습니다.</p>
+</div>
+
+<div class="section">
+  <div class="album-grid">
+    <div class="album-card">
+      <img src="../assets/images/KakaoTalk_20260602_170200715.png" alt="SUDO 활동 사진 1" />
+      <div class="album-info">
+        <h3>SUDO 활동</h3>
+        <p>한성대학교 AI/IT 소모임 SUDO 활동 사진입니다.</p>
+        <div class="album-date">2026.06.02</div>
+      </div>
+    </div>
+    <div class="album-card">
+      <img src="../assets/images/KakaoTalk_20260602_170249142.png" alt="SUDO 활동 사진 2" />
+      <div class="album-info">
+        <h3>SUDO 활동</h3>
+        <p>한성대학교 AI/IT 소모임 SUDO 활동 사진입니다.</p>
+        <div class="album-date">2026.06.02</div>
+      </div>
+    </div>
+    <div class="album-card">
+      <img src="../assets/images/KakaoTalk_20260602_170337098.png" alt="SUDO 활동 사진 3" />
+      <div class="album-info">
+        <h3>SUDO 활동</h3>
+        <p>한성대학교 AI/IT 소모임 SUDO 활동 사진입니다.</p>
+        <div class="album-date">2026.06.02</div>
+      </div>
+    </div>
+    <div class="album-card">
+      <img src="../assets/images/KakaoTalk_20260602_170438215.jpg" alt="SUDO 활동 사진 4" />
+      <div class="album-info">
+        <h3>SUDO 활동</h3>
+        <p>한성대학교 AI/IT 소모임 SUDO 활동 사진입니다.</p>
+        <div class="album-date">2026.06.02</div>
+      </div>
+    </div>
+    <div class="album-card">
+      <img src="../assets/images/KakaoTalk_20260602_170438215_01.jpg" alt="SUDO 활동 사진 5" />
+      <div class="album-info">
+        <h3>SUDO 활동</h3>
+        <p>한성대학교 AI/IT 소모임 SUDO 활동 사진입니다.</p>
+        <div class="album-date">2026.06.02</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>© 2025 SUDO — 한성대학교 AI/IT 소모임</footer>
+
+<script src="../assets/js/album.js"></script>
 </body>
 </html>
